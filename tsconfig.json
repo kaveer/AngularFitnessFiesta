@@ -6,6 +6,16 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "paths": {
+      "fitness-core": [
+        "dist/fitness-core/fitness-core",
+        "dist/fitness-core"
+      ],
+      "fitness-header": [
+        "dist/fitness-header/fitness-header",
+        "dist/fitness-header"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,

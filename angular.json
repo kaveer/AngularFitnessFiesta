@@ -100,6 +100,68 @@
           }
         }
       }
+    },
+    "fitness-header": {
+      "projectType": "library",
+      "root": "projects/fitness-header",
+      "sourceRoot": "projects/fitness-header/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/fitness-header/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fitness-header/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fitness-header/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/fitness-header/src/test.ts",
+            "tsConfig": "projects/fitness-header/tsconfig.spec.json",
+            "karmaConfig": "projects/fitness-header/karma.conf.js"
+          }
+        }
+      }
+    },
+    "fitness-core": {
+      "projectType": "library",
+      "root": "projects/fitness-core",
+      "sourceRoot": "projects/fitness-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/fitness-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/fitness-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/fitness-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/fitness-core/src/test.ts",
+            "tsConfig": "projects/fitness-core/tsconfig.spec.json",
+            "karmaConfig": "projects/fitness-core/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "FitnessFiesta"
