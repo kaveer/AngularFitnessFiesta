@@ -3,8 +3,7 @@ import { FitnessHeaderComponent } from './fitness-header.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { UserComponent } from './user/user.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-
-
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -14,6 +13,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     WelcomeComponent
   ],
   imports: [
+    ButtonModule
   ],
   exports: [
     FitnessHeaderComponent
